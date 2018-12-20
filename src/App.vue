@@ -1,28 +1,18 @@
 <template>
-  <div id="app">
-    <img src="./assets/logo.png">
-    <HelloWorld/>
+  <div id="container">
+    <router-view></router-view>
+    <FooterGuide></FooterGuide>
   </div>
 </template>
-
 <script>
-import HelloWorld from './components/HelloWorld'
-
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
+  import FooterGuide from './components/FooterGuide/FooterGuide.vue'
+  export default {
+    components: {
+      FooterGuide
+    }
   }
-}
 </script>
+<style lang="stylus">
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
 </style>
+
